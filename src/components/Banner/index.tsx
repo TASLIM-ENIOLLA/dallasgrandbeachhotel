@@ -20,7 +20,7 @@ export default function Component({ justHeader, darkText }: { justHeader?: boole
 							Discover the perfect blend of luxury, comfort, and convenience at Dallas Grand Beach Hotel and Resort.
 						</div>
 						<div>
-							<Link href="/make-reservation" className="py-5 px-20 font-bold uppercase bg-yellow-400 rounded-lg text-black">
+							<Link href="https://www.expedia.com/Dallas-Grand-Beach-Hotel-Resort.h66261659.Hotel-Information" className="py-5 px-20 font-bold uppercase bg-yellow-400 rounded-lg text-black">
 								make a reservation
 							</Link>
 						</div>
