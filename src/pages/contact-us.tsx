@@ -15,26 +15,26 @@ export default function Page() {
 					<div className="text-2xl md:text-4xl text-center leading-normal font-bold capitalize">
 						contact us
 					</div>
-					<div className="flex flex-row-reverse gap-10">
-						<div className="md:w-7/12">
+					<div className="flex flex-wrap flex-row-reverse">
+						<div className="md:pl-10 pb-10 md:pb-0 w-full md:w-7/12">
 							<div className="space-y-10">
 								<div className="text-2xl md:text-3xl text-center leading-normal font-bold">
 									Leave a message
 								</div>
 								<div className="grid grid-cols-2 gap-10">
-									<div className="col-span-1">
+									<div className="col-span-2 col-span-1">
 										<div className="space-y-3">
 											<div className="text-lg capitalize font-medium">full name</div>
 											<input name="name" className="p-4 rounded-md border border-gray-300 block w-full" />
 										</div>
 									</div>
-									<div className="col-span-1">
+									<div className="col-span-2 col-span-1">
 										<div className="space-y-3">
 											<div className="text-lg capitalize font-medium">email address</div>
 											<input name="email" className="p-4 rounded-md border border-gray-300 block w-full" />
 										</div>
 									</div>
-									<div className="col-span-2">
+									<div className="col-span-2 col-span-2">
 										<div className="space-y-3">
 											<div className="text-lg capitalize font-medium">write message</div>
 											<textarea name="message" rows={7} className="block resize-none w-full rounded-md border border-gray-300 p-4"></textarea>
@@ -48,13 +48,13 @@ export default function Page() {
 								</div>
 							</div>
 						</div>
-						<div className="md:w-5/12">
+						<div className="w-full md:w-5/12">
 							<iframe
 								loading="lazy"
 								allowFullScreen={true}
 								referrerPolicy="no-referrer-when-downgrade"
 								className="w-full h-full shadow-xl border rounded-xl"
-								style={{ objectFit: "cover", objectPosition: "center" }}
+								style={{ minHeight: "400px", objectFit: "cover", objectPosition: "center" }}
 								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d496.08689504387917!2d5.67961!3d5.898374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040e31a53d481b5%3A0xec37b21306a676fb!2sDallas%20Grand%20Beach%20Hotel%20%26%20Resort!5e0!3m2!1sen!2sng!4v1696285128144!5m2!1sen!2sng" 
 							></iframe>
 							{/*<iframe
