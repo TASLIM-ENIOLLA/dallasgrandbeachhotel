@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import RoomFeatures from "../RoomFeatures";
 
-export default function Component({ id, name, priceUnit, images }: RoomCardType) {
+export default function Component({ id, name, priceUnit, price, images }: RoomCardType) {
 	const [conversionRates, setConversionRates] = useState();
 
 	useEffect(() => {
@@ -13,15 +13,15 @@ export default function Component({ id, name, priceUnit, images }: RoomCardType)
 		.then(({ data }: { data: any }) => setConversionRates(data))
 	}, [])
 
-	const price = useMemo(() => {
-		if(conversionRates && priceUnit) {
-			const { USD, NGN }: { USD: number, NGN: number } = conversionRates;
+	// const price = useMemo(() => {
+	// 	if(conversionRates && priceUnit) {
+	// 		const { USD, NGN }: { USD: number, NGN: number } = conversionRates;
 
-			return NGN * priceUnit;
-		}
+	// 		return NGN * priceUnit;
+	// 	}
 
-		return 0;
-	}, [priceUnit, conversionRates])
+	// 	return 0;
+	// }, [priceUnit, conversionRates])
 
 	return (
 		<div className="overflow-hidden rounded-3xl hover:shadow-lg cursor-pointer transition ease-in-out duration-500">
@@ -54,7 +54,7 @@ export default function Component({ id, name, priceUnit, images }: RoomCardType)
 				</div>
 				<div>
 					<span className="font-semibold capitalize text-lg md:text-xl">
-						NGN {price.toLocaleString()}
+						NGN {new Intl.NumberFormat().format(parseInt(price))}
 					</span>
 					<span className="text-gray-600 font-medium"> / night</span>
 				</div>
@@ -66,6 +66,7 @@ export default function Component({ id, name, priceUnit, images }: RoomCardType)
 export type RoomCardType = {
 	id: number | string,
 	priceUnit: number,
+	price: number,
 	name: string,
 	images: string [],
 }

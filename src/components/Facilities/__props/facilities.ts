@@ -7,7 +7,7 @@ export const facilities = [
 	},
 	{
 		id: "sports-bar",
-		name: "sports bar",
+		name: "PES game center",
 		imagePath: ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
 		description: "Immerse yourself in the ultimate sports fan experience at our hotel's sports bar. Enjoy thrilling game-day action on large screens, relish delectable cuisine, and join in the spirited camaraderie as you support your preferred teams. Whether you're a passionate sports aficionado or seeking a lively night out, our sports bar promises a fantastic atmosphere for relaxation, socializing, and sharing in the excitement."
 	},
@@ -37,7 +37,7 @@ export const facilities = [
 	},
 	{
 		id: "event-center",
-		name: "event center",
+		name: "bush bar",
 		imagePath: ["1.jpg", "2.jpg"],
 		description: "Discover the ideal venue for your next event at our hotel's event center. With versatile spaces, state-of-the-art facilities, and attentive service, we're ready to host your special occasions, from weddings and conferences to celebrations and meetings. Let us bring your vision to life in a setting that combines elegance and functionality, ensuring an unforgettable event experience for you and your guests."
 	},

@@ -32,18 +32,18 @@ export default function Component({ justHeader, darkText }: { justHeader?: boole
 					background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/resources/banner/5.jpg);
 					background-size: cover;
 					background-position: center;
-					// animation: change_bg 30s ease-in-out alternate-reverse infinite;
+					animation: change_bg 30s ease-in-out alternate-reverse infinite;
 					background-attachement: fixed;
 				}
 				header {
 					backdrop-filter: blur(5px);
 				}
 				@keyframes change_bg {
-					0% {
-						background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/resources/banner/6.jpg);
-						background-size: cover;
-						background-position: center;
-					}
+					// 0% {
+					// 	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/resources/banner/6.jpg);
+					// 	background-size: cover;
+					// 	background-position: center;
+					// }
 					20% {
 						background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/resources/banner/1.jpg);
 						background-size: cover;
